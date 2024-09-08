@@ -53,18 +53,18 @@ p {
 }
 
 .w {
-    background-image: url("/images/crash.png");
+    background-image: url("./images/crash.png");
     
     
     
 }
 
 .a {
-    background-image: url("/images/kick.png");
+    background-image: url("./images/kick.png");
 }
 
 .s {
-    background-image: url("/images/snare.png");
+    background-image: url("./images/snare.png");
     
     
 }
@@ -74,11 +74,11 @@ p {
 }
 
 .j {
-    background-image: url("/images/tom2.png");
+    background-image: url("./images/tom2.png");
 }
 
 .k {
-    background-image: url("/images/tom3.png");
+    background-image: url("./images/tom3.png");
 }
 
 .l {
