@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(135deg, #8f7a7a, #8eb2e7); /* Gradient background */
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 10px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.drum {
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    width: 120px;
+    height: 120px;
+    margin: 15px;
+    border-radius: 15px; /* Slightly rounded corners */
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-size: cover;
+}
+
+.w {
+    background-image: url("/images/crash.png");
+    
+    
+    
+}
+
+.a {
+    background-image: url("/images/kick.png");
+}
+
+.s {
+    background-image: url("/images/snare.png");
+    
+    
+}
+
+.d {
+    background-image: url("/images/tom1.png");
+}
+
+.j {
+    background-image: url("/images/tom2.png");
+}
+
+.k {
+    background-image: url("/images/tom3.png");
+}
+
+.l {
+    background-image: url("./images/tom4.png");
+}
+
+.drum:active, .drum.pressed {
+    transform: scale(0.95);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3); /* More intense shadow when pressed */
+}
+
+.drum:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .drum {
+        width: 80px;
+        height: 80px;
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
